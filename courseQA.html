@@ -1,0 +1,58 @@
+﻿<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=big5">
+<title>title</title>
+<style type="text/css">
+<!--
+.style1 {
+	font-size: 16px;
+	color: #FFFFFF;
+	text-decoration: none;
+	font-family: "新細明體";
+	font-weight: bold;
+}
+-->
+</style>
+</head>
+<script>
+	function add() {
+		    var u1="http://elearning.uch.edu.tw/course.php?courseID=51478"                     // 課程活動(公告)
+			var u2="http://elearning.uch.edu.tw/course.php?courseID=51478&f=hwlist"            // 作業
+			var u3="http://elearning.uch.edu.tw/course.php?courseID=51478&f=forum&tid=227741"  //互動討論區
+			var u4="http://elearning.uch.edu.tw/course.php?courseID=51478&f=forum&tid=227742"  //課後輔導區
+            document.getElementById("tit").innerText = "問題彙整說明";
+		    var msg ='1.無法進入作業繳交、互動討論、及課後討論區 ?' + "<BR>"
+			    msg+='Ans:<font color=blue>因為iLMS學習平台允許權限設定為登入方能使用，請使用帳號密碼登入課程</font>' + "<BR><BR>"
+			    msg+='2.進入互動討論及課後討論區，無法看到<font color=red>回應</font>按鈕，請問要如何互動?<br>'
+			    msg+='Ans:<font color=blue>討論區需要用帳號登入iLMS學習平台，這樣才知道發問者的身分。</font>' + "<BR><BR>"
+                msg+='3.我有使用帳號登入iLMS平台進入作業繳交區，但還是無法繳交作業 (無法看到<font color=red>交作業</font>按鈕)，請問要如何解決?<br>'
+  		        msg+='Ans:<font color=blue>繳交作業功能，需要申請為課程成員。請email給老師申請加入課程，待審核通過後會email通知。</font>' + "<BR><BR>"
+            document.getElementById("txt").innerHTML = msg;
+        }
+</script>
+<body onload="add()">
+<table width="100%" border="0">
+  <tr>
+    <td>
+	
+<table width="100%" border="1" bordercolorlight="#3399FF" cellspacing="0" bordercolordark="#FFFFFF" bgcolor="#E8FBFF">
+  <tr>
+    <td bgcolor="#71B1D9" align="center">
+	
+	<font color="#FFFFFF" class="style1" id="tit"></font>
+	
+	</td>
+  </tr>
+  <tr>
+    <td>
+	<div id="txt"></div>
+	</td>
+  </tr>
+</table>
+	</td>
+  </tr>
+</table>
+
+
+</body>
+</html>

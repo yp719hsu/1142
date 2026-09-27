@@ -1,0 +1,62 @@
+﻿<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=big5">
+<title>title</title>
+<style type="text/css">
+<!--
+.style1 {
+	font-size: 16px;
+	color: #FFFFFF;
+	text-decoration: none;
+	font-family: "新細明體";
+	font-weight: bold;
+}
+-->
+</style>
+</head>
+<script>
+	function add() {
+            var u1="http://elearning.uch.edu.tw/course.php?courseID=51478"                    // 課程活動(公告)
+			var u2="http://elearning.uch.edu.tw/course.php?courseID=51478&f=hwlist"           // 作業
+			var u3="http://elearning.uch.edu.tw/course.php?courseID=51478&f=forum&tid=227741"  //互動討論區
+			var u4="http://elearning.uch.edu.tw/course.php?courseID=51478&f=forum&tid=227742"  //課後輔導區
+            document.getElementById("tit").innerText = "重要公告事項";
+		    var msg ='1.課程首頁: <a href="index.html" target=_top> APP設計實習數位教材</a>' + "<BR><BR>"
+			    msg+='2.課程單元: <a href="course.html"> 顯示內容</a>' + "<BR><BR>"
+			    msg+='3.本課程互動討論及課後輔導需要帳號登入<a href="'+u1+'" Target=_top>數位化學習平台(iLMS)</a><br>&nbsp;&nbsp;&nbsp;'
+				msg+='才可以用你的帳號及email跟老師互動並且透過iLMS來繳交作業<br>&nbsp;&nbsp;&nbsp;'
+				msg+='請email給老師申請加入課程學習，等待審核通過後老師會將你加入課程成員內<br>&nbsp;&nbsp;&nbsp;'
+				msg+='用email通知你可以進入作業繳交區，會有交作業的選項，方可以繳交作業' + "<BR><BR>"
+				msg+='4.進入作業繳交區 (<a href="'+u2+'" Target=_top>進入網址</a>)' + "<BR><BR>"
+				msg+='5.進入互動討論區 (<a href="'+u3+'" Target=_top>進入網址</a>)' + "<BR><BR>"
+				msg+='6.進入課後輔導區 (<a href="'+u4+'" Target=_top>進入網址</a>)' + "<BR><BR>"
+				msg+='7.課程活動公告區 (<a href="'+u1+'" Target=_top>進入網址</a>)' + "<BR><BR>"
+            document.getElementById("txt").innerHTML = msg;
+        }
+</script>
+<body onload="add()">
+<table width="100%" border="0">
+  <tr>
+    <td>
+	
+<table width="100%" border="1" bordercolorlight="#3399FF" cellspacing="0" bordercolordark="#FFFFFF" bgcolor="#E8FBFF">
+  <tr>
+    <td bgcolor="#71B1D9" align="center">
+	
+	<font color="#FFFFFF" class="style1" id="tit"></font>
+	
+	</td>
+  </tr>
+  <tr>
+    <td>
+	<div id="txt"></div>
+	</td>
+  </tr>
+</table>
+	</td>
+  </tr>
+</table>
+
+
+</body>
+</html>

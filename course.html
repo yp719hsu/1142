@@ -1,0 +1,59 @@
+﻿<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=big5">
+<title>title</title>
+<style type="text/css">
+<!--
+.style1 {
+	font-size: 16px;
+	color: #FFFFFF;
+	text-decoration: none;
+	font-family: "新細明體";
+	font-weight: bold;
+}
+-->
+</style>
+</head>
+<script>
+	function add() {
+
+            document.getElementById("tit").innerText = "教學單元內容介紹";
+		    var     msg ="單元1 : 課程簡介" + "<BR>"
+			    msg+="單元2 : APP介紹" + "<BR>"
+			    msg+="單元3 : 圖像處理" + "<BR>"	    
+                            msg+="單元4 : 文字輸入盒" + "<BR>"
+			    msg+="單元5 : 迴圈與函數" + "<BR>"
+			    msg+="單元6 : 猜數字遊戲" + "<BR>"
+			    msg+="單元7 : 井字遊戲" + "<BR>"
+			    msg+="單元8 : 打地鼠遊戲" + "<BR>"
+			    msg+="單元9 : 多螢幕設計" + "<BR>"
+			    msg+="單元10: 期末作業" + "<BR>"
+            document.getElementById("txt").innerHTML = msg;
+        }
+</script>
+<body onload="add()">
+<table width="100%" border="0">
+  <tr>
+    <td>
+	
+<table width="100%" border="1" bordercolorlight="#3399FF" cellspacing="0" bordercolordark="#FFFFFF" bgcolor="#E8FBFF">
+  <tr>
+    <td bgcolor="#71B1D9" align="center">
+	
+	<font color="#FFFFFF" class="style1" id="tit"></font>
+	
+	</td>
+  </tr>
+  <tr>
+    <td>
+	<div id="txt"></div>
+	</td>
+  </tr>
+</table>
+	</td>
+  </tr>
+</table>
+
+
+</body>
+</html>
